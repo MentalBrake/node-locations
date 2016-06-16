@@ -20,9 +20,9 @@ module.exports.getWikiNearbyInfo = function (cache, req, res, next) {
         res.send(cache[key]);
     } else {
         wikiNearbyApi.getWikiNearbyInfo(lon, lat)
-            .then(function (coordinates) {
-                cache[key] = coordinates;
-                res.send(coordinates);
+            .then(function (locations) {
+                cache[key] = locations;
+                res.send(locations);
             }).catch(function(err){
                 res.status(400);
                 res.send(err);

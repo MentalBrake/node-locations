@@ -1,6 +1,6 @@
 "use strict";
 
-var geoController = require('../controllers/geoCodeController'),
+var geoController = require('../controllers/geocodeController'),
     wikiNearbyController = require('../controllers/wikiNearbyController'),
     auth = require('../middleware/basicAuth');
 
